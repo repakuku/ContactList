@@ -5,8 +5,6 @@
 //  Created by Алексей Турулин on 5/27/23.
 //
 
-import Foundation
-
 struct Person {
     let firstName: String
     let secondName: String
@@ -25,17 +23,12 @@ struct Person {
         
         var persons: [Person] = []
         
-        for i in 0...firstNames.count - 1 {
-            let firstName = firstNames[i]
-            let secondName = secondNames[i]
-            let email = emails[i]
-            let phoneNumber = phoneNumbers[i]
-            
+        for index in 0...firstNames.count - 1 {
             persons.append(Person(
-                firstName: firstName,
-                secondName: secondName,
-                email: email,
-                phoneNumber: phoneNumber)
+                firstName: firstNames[index],
+                secondName: secondNames[index],
+                email: emails[index],
+                phoneNumber: phoneNumbers[index])
             )
         }
         

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		075BA3342A23E2D500AA7A4E /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075BA3332A23E2D500AA7A4E /* TabBarController.swift */; };
+		075BA3362A23E30100AA7A4E /* SecondContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075BA3352A23E30100AA7A4E /* SecondContactListViewController.swift */; };
 		079B36D22A2265F000EE8A56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079B36D12A2265F000EE8A56 /* AppDelegate.swift */; };
 		079B36D42A2265F000EE8A56 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079B36D32A2265F000EE8A56 /* SceneDelegate.swift */; };
 		079B36D92A2265F000EE8A56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 079B36D72A2265F000EE8A56 /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		075BA3332A23E2D500AA7A4E /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		075BA3352A23E30100AA7A4E /* SecondContactListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondContactListViewController.swift; sourceTree = "<group>"; };
 		079B36CE2A2265F000EE8A56 /* ContactList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		079B36D12A2265F000EE8A56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		079B36D32A2265F000EE8A56 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,8 +105,10 @@
 		079B36E82A22662600EE8A56 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				075BA3332A23E2D500AA7A4E /* TabBarController.swift */,
 				079B36E92A22666500EE8A56 /* ContactListViewController.swift */,
 				079B36F22A22753200EE8A56 /* PersonDetailsViewController.swift */,
+				075BA3352A23E30100AA7A4E /* SecondContactListViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -190,7 +196,9 @@
 				079B36EF2A226A0400EE8A56 /* Person.swift in Sources */,
 				079B36F12A226AA900EE8A56 /* DataStore.swift in Sources */,
 				079B36D22A2265F000EE8A56 /* AppDelegate.swift in Sources */,
+				075BA3362A23E30100AA7A4E /* SecondContactListViewController.swift in Sources */,
 				079B36D42A2265F000EE8A56 /* SceneDelegate.swift in Sources */,
+				075BA3342A23E2D500AA7A4E /* TabBarController.swift in Sources */,
 				079B36EA2A22666500EE8A56 /* ContactListViewController.swift in Sources */,
 				079B36F32A22753200EE8A56 /* PersonDetailsViewController.swift in Sources */,
 			);
