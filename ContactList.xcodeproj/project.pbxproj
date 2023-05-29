@@ -66,8 +66,8 @@
 		079B36D02A2265F000EE8A56 /* ContactList */ = {
 			isa = PBXGroup;
 			children = (
-				079B36ED2A2269F700EE8A56 /* Models */,
 				079B36E52A2265FF00EE8A56 /* App */,
+				079B36ED2A2269F700EE8A56 /* Models */,
 				079B36E62A22661400EE8A56 /* Stroyboards */,
 				079B36E82A22662600EE8A56 /* ViewControllers */,
 				079B36E72A22661E00EE8A56 /* Resources */,
