@@ -23,7 +23,14 @@ struct Person {
         
         var persons: [Person] = []
         
-        for index in 0...firstNames.count - 1 {
+        let iterationCount = min(
+            firstNames.count,
+            secondNames.count,
+            emails.count,
+            phoneNumbers.count
+        )
+        
+        for index in 0..<iterationCount {
             persons.append(Person(
                 firstName: firstNames[index],
                 secondName: secondNames[index],
@@ -34,4 +41,9 @@ struct Person {
         
         return persons
     }
+}
+
+enum Contacts: String {
+    case phone = "phone"
+    case email = "tray"
 }

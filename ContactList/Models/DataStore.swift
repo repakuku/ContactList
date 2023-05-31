@@ -8,7 +8,7 @@
 class DataStore {
     static let shared = DataStore()
     
-    let firstNames: [String] = [
+    let firstNames = [
         "William",
         "Noah",
         "Olivia",
@@ -25,7 +25,7 @@ class DataStore {
         "Liam",
         "Grace"
     ]
-    let secondNames: [String] = [
+    let secondNames = [
         "Smith",
         "Johnson",
         "Williams",
@@ -42,7 +42,7 @@ class DataStore {
         "Wilson",
         "Anderson"
     ]
-    let emails: [String] = [
+    let emails = [
         "akajdsv@email.com",
         "bkalsjdh@email.com",
         "cajdwhfg@email.com",
@@ -59,7 +59,7 @@ class DataStore {
         "oiooodjv@email.com",
         "ppoosafjafj@email.com"
     ]
-    let phoneNumbers: [String] = [
+    let phoneNumbers = [
         "(213)456-3442",
         "(201)763-8876",
         "(213)998-3564",

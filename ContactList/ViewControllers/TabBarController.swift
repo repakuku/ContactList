@@ -9,9 +9,6 @@ import UIKit
 
 final class TabBarController: UITabBarController {
 
-    // MARK: - Private Properties
-    private let persons = Person.getPersons()
-    
     // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,13 +18,12 @@ final class TabBarController: UITabBarController {
     // MARK: - Private Methods
     private func transferData() {
         guard let viewControllers else { return }
+        guard let contactListVC = viewControllers.first as? ContactListViewController else { return }
+        guard let secondContactListVC = viewControllers.last as? SecondContactListViewController else { return }
         
-        viewControllers.forEach {
-            if let contactListVC = $0 as? ContactListViewController {
-                contactListVC.persons = persons
-            } else if let secondContactListVC = $0 as? SecondContactListViewController {
-                secondContactListVC.persons = persons
-            }
-        }
+        let persons = Person.getPersons()
+        
+        contactListVC.persons = persons
+        secondContactListVC.persons = persons
     }
 }
