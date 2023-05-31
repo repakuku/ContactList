@@ -22,25 +22,20 @@ class SecondContactListViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        2
+        persons[section].rows.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "contact", for: indexPath)
         var content = cell.defaultContentConfiguration()
         let person = persons[indexPath.section]
+        content.text = person.rows[indexPath.row]
         
-        switch indexPath.row {
-        case 0:
-            content.text = person.phoneNumber
-            content.image = UIImage(systemName: Contacts.phone.rawValue)
-        default:
-            content.text = person.email
-            content.image = UIImage(systemName: Contacts.email.rawValue)
-        }
+        content.image = indexPath.row == 0
+        ? UIImage(systemName: Contacts.phone.rawValue)
+        : UIImage(systemName: Contacts.email.rawValue)
         
         cell.contentConfiguration = content
-        
         return cell
     }
     

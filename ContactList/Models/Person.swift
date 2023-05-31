@@ -15,6 +15,10 @@ struct Person {
         "\(firstName) \(secondName)"
     }
     
+    var rows: [String] {
+        [phoneNumber, email]
+    }
+    
     static func getPersons() -> [Person] {
         let firstNames = DataStore.shared.firstNames.shuffled()
         let secondNames = DataStore.shared.secondNames.shuffled()
